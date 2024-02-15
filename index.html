@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Pizza Order Form</h1>
+    </header>
+    <main>
+      <form>
+        <fieldset class="contact-info">
+          <legend> Contact Information</legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="phone">Phone:</label>
+          <input type="contact" id="contact" name="phone" required>
+
+          <label for="email">Email:</label>
+          <input type="emial" id="email" name="email" required>
+        </fieldset>
+        <img src="tasty-pizza.jpg" alt="Pizza Hub">
+      <img src="threepizza.jpg" alt="pizza daily">
+      <img src="tasty-pizza.jpg" alt="Pizza Hub">
+      <img src="threepizza.jpg" alt="pizza daily">
+
+        <fieldset>
+          <legend>Pizza details</legend>
+          <label for="num_pizzas"> Number of Pizzas:</label>
+          <input type="number" id="num_pizzas" name="num_pizzas" min="1" required>
+
+          <label for="size">Size:</label>
+          <select id="size" name="size"required>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option> 
+          </select>
+          <label>Shape:</label>
+          <label><input type="radio" name="shape" value="round" checked>Round</label>
+          <label><input type="radio" name="shape" value="square">Square</label>
+          
+          <label for="toppings">Toppings:</label>
+          <input type="text" id="toppings" nmae="toppings">
+
+          <label>Crust Type:</label>
+          <select name="crust" required>
+          <option value="deep-dish">Deep Dish</option>
+          <option value="thin-crust">Thin Crust</option>
+          <option value="Celebri-Cheese Supreme">Celebri-Cheese Supreme</option>
+        </select>
+        
+        <label>Delivery Method</label>
+        <label><input type="radio" name="delivery_method" value="takeout" checked>Takeout</label>
+        <label><input type="radio" name="delivery_method" value="delivery">Delivery</label>
+        <label><input type="radio" name="delivery_method" value="eat-in">Eat-in</label>
+      </fieldset>
+      <input type="submit" value="Place Order">
+      <input type="reset" value="Reset">
+      </form>
+    </main>
+    <footer>@ 2024 Pizza Order Form</footer>
+  </body>
+</html>
